@@ -1,0 +1,37 @@
+{
+  "name": "workmate-demo-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "nodemon --exec babel-node -- src/index.js",
+    "build": "babel src -d build",
+    "start": "npm run build && node build/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.10.1",
+    "@babel/runtime": "^7.10.2",
+    "@koa/cors": "^3.1.0",
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "koa": "^2.12.1",
+    "koa-body": "^4.2.0",
+    "koa-router": "^9.0.1",
+    "pg": "^8.2.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.13"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/register": "^7.10.1"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
